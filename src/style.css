@@ -1,0 +1,14 @@
+div {
+    background-color: plum;
+    padding: 20px;
+    width: 270px;
+    border-radius: 10px;
+    
+}
+
+form {
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 230px;
+    display: block;
+}

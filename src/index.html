@@ -6,8 +6,39 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+
+    </header>
     <main></main>
+      <div>
+        <form>
+            
+              <label for="name">Nome impresso no cartão 
+                <span class="required">*</span>
+                <input type="text" name="name" id="namecard" class="text-input" required  >
+              </label>
+            
+              <label for="number">Numero do cartão 
+              <span class="required">*</span>
+              <input type="text" name="name" id="numbercard" class="text-input" placeholder="xxxx xxxx xxxx xxxx" required>
+            </label>
+
+            <p>
+              <label for="expiracaodocartao">Validade (MM/YY) </label>
+              <span class="required">*</span>
+              <input type="text" name="expiracaodocartao" id="validadecard" class="text-input" placeholder="MM / YY" required  >
+            </p>
+
+            <p>
+              <label for="codseguranca">Código CVV </label>
+              <span class="required">*</span>
+              <input type="text" name="codseguranca" id="cvvcard" class="text-input" placeholder="CVC" required  >
+            </p>
+
+            <button id="botaoEnviar">finalizar compra </button>
+        </form>
+        </div>
+    
     <footer></footer>
     <script src="index.js" type="module"></script>
   </body>
