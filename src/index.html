@@ -10,30 +10,17 @@
 
     </header>
     <main></main>
-      <div>
-        <form>
-            
-              <label for="name">Nome impresso no cartão 
+      <div class="container">
+        <form class="child">
+              <label for="name">Nome impresso no cartão</label>
                 <span class="required">*</span>
-                <input type="text" name="name" id="namecard" class="text-input" required  >
-              </label>
+                <input type="text" name="name" id="namecard" >
+              
             
-              <label for="number">Numero do cartão 
+              <label for="cardNumber">Numero do cartão</label> 
               <span class="required">*</span>
-              <input type="text" name="name" id="numbercard" class="text-input" placeholder="xxxx xxxx xxxx xxxx" required>
-            </label>
-
-            <p>
-              <label for="expiracaodocartao">Validade (MM/YY) </label>
-              <span class="required">*</span>
-              <input type="text" name="expiracaodocartao" id="validadecard" class="text-input" placeholder="MM / YY" required  >
-            </p>
-
-            <p>
-              <label for="codseguranca">Código CVV </label>
-              <span class="required">*</span>
-              <input type="text" name="codseguranca" id="cvvcard" class="text-input" placeholder="CVC" required  >
-            </p>
+              <input type="number" name="name" id="cardNumber"  maxlength="16" >
+            
 
             <button id="botaoEnviar">finalizar compra </button>
         </form>

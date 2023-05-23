@@ -2,9 +2,17 @@ import validator from './validator.js';
 
 document.getElementById("botaoEnviar").addEventListener("click", finalizarCompra)
 
-function finalizarCompra (){alert("hi")}
+function finalizarCompra (e){
+  e.preventDefault();
+    console.log("finalizar")
+    const valorInput = document.getElementById("cardNumber").value
+    console.log(valorInput)
 
-const numeroDoCartao = document.getElementById("cardNumber").value
-
-console.log(validator);
+    
+    
+    const a = validator.isValid(valorInput)
+    console.log(a)
+    
+    
+}
 
