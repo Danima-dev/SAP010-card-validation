@@ -1,7 +1,7 @@
 const validator = {
 
         isValid:function (cardNumber){
-     
+          
             console.log("chamou validator", cardNumber)
 
             //Inverter a ordem dos números 
@@ -15,8 +15,8 @@ const validator = {
               console.log(multiplicarNumero)
 
               if(multiplicarNumero > 9){
-                  const numeroAtual = multiplicarNumero.join('').split('');
-                  multiplicarNumero = parseInt(numeroAtual[0]) + parseInt(numeroAtual[1])
+                  
+                  multiplicarNumero = parseInt(inputnumero[0]) + parseInt(inputnumero[1])
                   console.log(multiplicarNumero)
                   totalDenumeros += multiplicarNumero
                 }else {
@@ -35,14 +35,7 @@ const validator = {
             
           }
 
-          
-          
-          //somar todos os números 
-          //Verificar se a soma é divisível por 10 
-          //Se for divisível por 10 ele é válido se não Inválido
-
         },
-
         maskify: function(cardNumber){
           const x = cardNumber.split('');
           for (let i=0; i< x.length - 4; i++){

@@ -8,9 +8,17 @@ function finalizarCompra (e){
     const valorInput = document.getElementById("cardNumber").value
     console.log(valorInput)
 
-    
+    if(cardNumber === ""){
+      return alert('Por favor, insira o número do cartão.');
+    }
     
     const a = validator.isValid(valorInput)
+    const cardMask = validator.maskify(valorInput);
+    if(a){
+      alert('O cartão número:' + cardMask + ' é válido');
+    }else{
+      alert('O cartão número:' + cardMask + ' é inválido');
+    }
     console.log(a)
     
     
