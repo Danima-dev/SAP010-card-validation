@@ -1,31 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-
-    </header>
+    <header></header>
     <main></main>
-      <div class="container">
-        <form class="child">
-              <label for="name">Nome impresso no cartão</label>
-                <span class="required">*</span>
-                <input type="text" name="name" id="namecard" >
+    <div class="container">
+      <form class="child">
+        <label for="name">Nome impresso no cartão</label>
+        <span class="required">*</span>
+        <input type="text" name="name" id="namecard" />
 
+        <label for="cardNumber">Numero do cartão</label>
+        <span class="required">*</span>
+        <input type="number" name="name" id="cardNumber" maxlength="16" />
 
-              <label for="cardNumber">Numero do cartão</label> 
-              <span class="required">*</span>
-              <input type="number" name="name" id="cardNumber"  maxlength="16" >
-        
-              
-            <button id="botaoEnviar">finalizar compra </button>
-        </form>
-        </div>
-    
+        <button id="botaoEnviar">finalizar compra</button>
+      </form>
+    </div>
+
     <footer></footer>
     <script src="index.js" type="module"></script>
   </body>

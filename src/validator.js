@@ -1,53 +1,43 @@
 const validator = {
 
-        isValid:function (cardNumber){
-          
-            console.log("chamou validator", cardNumber)
+  isValid: function (cardNumber) {
 
-            //Inverter a ordem dos números 
-            var inputnumero = cardNumber.split('').reverse().join('')
-            console.log(inputnumero)
-            // multiplicar os números indíces impares
-            let totalDenumeros = 0
-            for (var i = 0; i < inputnumero.length; i++){
-            if (i % 2 !== 0){
-              let multiplicarNumero = inputnumero[i] * 2;
-              console.log(multiplicarNumero)
+    //Inverter a ordem dos números 
+    var inputNumero = cardNumber.split('').reverse().join('')
+    console.log(inputNumero)
+    // multiplicar os números  impares
+    let totalDeSoma = 0
+    for (var i = 0; i < inputNumero.length; i++) {
+      let digito = parseInt(inputNumero[i]);
 
-              if(multiplicarNumero > 9){
-                  
-                  multiplicarNumero = parseInt(inputnumero[0]) + parseInt(inputnumero[1])
-                  console.log(multiplicarNumero)
-                  totalDenumeros += multiplicarNumero
-                }else {
-                  totalDenumeros += multiplicarNumero
-                }
-              
-              }else  {
-                totalDenumeros += parseInt(inputnumero[i]);
-              } 
-              //Se o resto da divisão de i por 2 não for zero, mantem o mesmo número
-              if(totalDenumeros % 10 === 0){
-                return true;
-              }else{
-                return false;
-              }
-            
-          }
+      if (i % 2 === 1) { //Posição par 
+        digito *= 2; //Pegando a posição do digito e multiplicando por 2
 
-        },
-        maskify: function(cardNumber){
-          const x = cardNumber.split('');
-          for (let i=0; i< x.length - 4; i++){
-            x[i] = '#';
-          }
-          const maskedCard = x.join('');
-          return maskedCard
+        if (digito > 9) {
+          digito -= 9; //Se o número for maior que 9 subtrair 
         }
+      }
+
+      totalDeSoma += digito;
+
+      //Se o resto da divisão de i por 2 não for 1, mantem o mesmo número
+
+    }
+
+    return totalDeSoma % 10 === 0;
+  },
+  maskify: function (cardNumber) {
+    const x = cardNumber.split('');
+    for (let i = 0; i < x.length - 4; i++) {
+      x[i] = '#';
+    }
+    const maskedCard = x.join('');
+    return maskedCard
+  }
 
 };
 
 
-  
+
 
 export default validator;
