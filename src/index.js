@@ -14,7 +14,6 @@ function finalizarCompra(e) {
   } else {
     alert('O cartão número:' + cardMask + ' é inválido');
   }
-  console.log(a)
 
 
 }

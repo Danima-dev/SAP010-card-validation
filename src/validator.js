@@ -3,11 +3,10 @@ const validator = {
   isValid: function (cardNumber) {
 
     //Inverter a ordem dos números 
-    var inputNumero = cardNumber.split('').reverse().join('')
-    console.log(inputNumero)
+    const inputNumero = cardNumber.split('').reverse().join('')
     // multiplicar os números  impares
     let totalDeSoma = 0
-    for (var i = 0; i < inputNumero.length; i++) {
+    for (let i = 0; i < inputNumero.length; i++) {
       let digito = parseInt(inputNumero[i]);
 
       if (i % 2 === 1) { //Posição par 
