@@ -1,0 +1,26 @@
+body {
+    height: 100vh;
+    background: linear-gradient(180deg, #ffe1ed 0, #ffd4e4 16.67%, #ffc3da 33.33%, #f8b0cd 50%, #e89dc1 66.67%, #d98eb9 83.33%, #cc82b4 100%); 
+   
+}
+
+.container {
+    position: relative;
+    padding: 10px;
+    height: 96vh;
+}
+
+.child {
+    height: 150px;
+    width: 250px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font: 'Epilogue', sans-serif;
+    border-radius: 10px;
+    background-color: rgb(213, 229, 230);
+    box-shadow: 5px 5px 5px 5px rgb(68, 62, 62);
+
+}
+
