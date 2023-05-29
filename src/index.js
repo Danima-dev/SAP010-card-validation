@@ -1,8 +1,8 @@
 import validator from './validator.js';
 
-document.getElementById("botaoEnviar").addEventListener("click", finalizarCompra)
+document.getElementById("botaoEnviar").addEventListener("click", FinalizarValidação)
 
-function finalizarCompra(e) {
+function FinalizarValidação(e) {
   e.preventDefault();
 
   const valorInput = document.getElementById("cardNumber").value

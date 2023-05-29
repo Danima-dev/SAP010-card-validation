@@ -4,13 +4,13 @@ const validator = {
 
     //Inverter a ordem dos números 
     const inputNumero = cardNumber.split('').reverse().join('')
-    // multiplicar os números  impares
+
     let totalDeSoma = 0
     for (let i = 0; i < inputNumero.length; i++) {
       let digito = parseInt(inputNumero[i]);
 
-      if (i % 2 === 1) { //Posição par 
-        digito *= 2; //Pegando a posição do digito e multiplicando por 2
+      if (i % 2 === 1) { 
+        digito *= 2; 
 
         if (digito > 9) {
           digito -= 9; //Se o número for maior que 9 subtrair 
