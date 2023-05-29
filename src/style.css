@@ -1,26 +1,48 @@
 body {
     height: 100vh;
     background: linear-gradient(180deg, #ffe1ed 0, #ffd4e4 16.67%, #ffc3da 33.33%, #f8b0cd 50%, #e89dc1 66.67%, #d98eb9 83.33%, #cc82b4 100%); 
-    
+   
 }
 
 .container {
-    background-color: rgb(213, 229, 230);
-    padding: 20px;
-    width: 270px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 5px 5px 5px 5px rgb(68, 62, 62);
+    position: relative;
+    padding: 10px;
+    height: 96vh;
 }
 
 .child {
-    color: black;
-    width: 230px;
-    font-family: 'Epilogue', sans-serif;
-    font-family: 'Inter', sans-serif;
-    font-family: 'Poppins', sans-serif;
+    height: 150px;
+    width: 250px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Epilogue', 'Inter', 'Poppins', sans-serif;
+    font-size: larger;
+    border-radius: 8px;
+    background-color: rgb(213, 229, 230);
+    box-shadow: 5px 5px 5px 5px rgb(68, 62, 62);
 
+}
+
+label{
+    margin-left: 45px;
+    
+}
+
+input {
+    margin-left: 35px;
+    margin-top: 15px;
+}
+
+button {
+    margin-left: 59px;
+    margin-top: 15px;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    
 }
 
